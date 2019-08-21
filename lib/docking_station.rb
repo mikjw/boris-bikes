@@ -3,13 +3,14 @@ class DockingStation
 
   def initialize(num = 3)
     @bike_store = []
-  end 
+  end
 
   def release_bike
-    Bike.new
+    fail 'No bikes available' unless @bike
+    @bike
   end
 
   def dock_bike(bike)
     @bike = bike
-  end 
+  end
 end
