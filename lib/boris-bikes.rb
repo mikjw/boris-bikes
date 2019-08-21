@@ -1,12 +1,11 @@
-class DockingStation 
+class DockingStation
   def release_bike
     Bike.new
-  end 
-end 
+  end
+end
 
-class Bike 
+class Bike
   def working?
-  end 
-end 
-
-
+    true
+  end
+end

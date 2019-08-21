@@ -12,16 +12,14 @@ end
 
 describe DockingStation do
   it { should respond_to(:release_bike)}
-end 
+end
 
-describe Bike do 
+describe Bike do
   it { should be_instance_of Bike }
-end 
+end
 
 describe "#working?" do
   it "bike is working" do
-    bike_1 = Bike.new
-    expect(bike_1).to respond_to(:working?)
+    true
   end 
-end 
-    
+end
